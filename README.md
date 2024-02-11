@@ -2,12 +2,10 @@
 复兴对战平台，我的世界，CSGO，原神，XiaoPixel。
 
 ## 安装
-本项目依赖EDGE浏览器
+### 本项目依赖EDGE浏览器
 https://www.microsoft.com/zh-cn/edge/download
-\n
-可能需要VC++（不详）
-\n
-仅支持64位系统，ARM兼容性未测试。
+### 可能需要VC++（不详）
+### 仅支持64位系统，ARM兼容性未测试。
 
 ## 使用方法
 无脑克隆，运行fxml.exe即可。
