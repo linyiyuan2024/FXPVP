@@ -1,24 +1,39 @@
-This is free and unencumbered software released into the public domain.
+林毅远开源软件许可协议
+Version 1, 11 February 2024
+版权所有 (C) 2024 林毅远（顶级发布者）
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+1.特此免费授予任何获得本软件及相关文档文件（以下统称为“软件”）副本的人，无论以何种目的，不受限制地免费使用软件，但需符合以下条件：
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+2.用户可以自由修改软件的源代码，并且修改后的代码仅限用于个人使用或在非商业环境下分发，分发给商业机构也视为商业环境，无论该商业机构是否使用此项目进行商业行为。
+2-1.以被分发项目名义接取广告和付费分发均视为商业行为。
+2-2.在未经顶级发布者允许的情况下，商业广告不得与被分发项目的网络分发页面出现在同一页面。
+2-3."友情链接"等也视为商业广告。
+2-4.涉及商业行为即是商业环境。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+3.除非经顶级发布者同意，否则在任何情况下，修改后的软件及其衍生作品的最大分发人数不得超过10人。
+3-1.在网络上传输一次即视为一次分发，拷贝到移动存储介质一次也视为一次分发。
+3-2.分发数超出协议限制后，分发者应主动停止分发行为。包括但不限于删除网盘分享链接、停止公开存储库等。
 
-For more information, please refer to <https://unlicense.org>
+4.分发软件时，用户需保留软件的原始许可协议和顶级发布者的版权声明。
+
+5.顶级发布者下的二级发布者在分发软件后，不得有三级发布者再进行分发，无论是在商业环境还是非商业环境下。
+
+6.在非商业环境下分发软件时，分发者不得为给予捐助的人提供特殊服务，对待捐助者和非捐助者应一视同仁。
+6-1.为二者提供不同的代码，或相同代码提供不同的功能，或相同代码相同功能设置不同的使用门槛，均视为特殊服务。
+6-2.特殊服务视为商业行为。
+
+7.顶级发布者不对使用本软件时的任何损害负责，无论是直接的、间接的、特殊的、偶发的或结果性的损害。
+
+8.本软件是按“原样”提供，没有任何明示或暗示的保证，包括但不限于适销性、特定用途适用性等。
+
+9.对于使用和分发本软件所引起的任何争议，顶级发布者与二级发布者或其他分发使用者应当协商解决，若一个月内不能完成协商，顶级发布者有权要求其限期删除分发并停止使用本软件。
+
+10.适用法律：当适用的国际性法律标准与中华人民共和国法律标准相冲突时，将优先适用中华人民共和国法律标准，除非这会对顶级发布者的利益造成不利影响。
+
+11.法律管辖地：对于与本协议有关的任何争议，顶级发布者和其他相关方同意将争议提交至仲裁机构（根据仲裁规则选择）进行仲裁，并同意仲裁裁决为最终裁决，其地点应为中华人民共和国的主要商业城市（如青岛等），仲裁语言应为中文或英文。
+
+12.分支条款：本协议的任何条款的无效性不影响其他条款的有效性。
+
+13.协议更新机制:当发生特定事件时（例如法律法规的变化、技术标准的更新、社区反馈等），触发协议的更新。在发生这些事件时，顶级发布者可根据情况更新协议。
+13-1.新旧协议如有冲突，以新协议为准。
+13-2.若有任何主体拒绝接受协议更新，则剥夺该主体对此软件的一切权利，包括但不限于使用、修改、分发等。
