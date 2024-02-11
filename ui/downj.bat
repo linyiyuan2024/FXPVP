@@ -1,0 +1,2 @@
+curl -JLo ./j17.zip.001 https://api.7585.net.cn/lanzou/api.php?url=https://wwd.lanzoum.com/iFwCi1o16rid"&"type=down
+curl -JLo ./j17.zip.002 https://api.7585.net.cn/lanzou/api.php?url=https://wwd.lanzoum.com/i4Hpf1o16ved"&"type=down

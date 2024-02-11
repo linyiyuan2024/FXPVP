@@ -1,0 +1,16 @@
+{
+  "exitWithMinecraft": false,
+  "javaPath": "./j17/bin/java.exe",
+  "windowSizeWidth": 854,
+  "windowSizeHeight": 480,
+  "language": "zh",
+  "downloadSource": 0,
+  "checkAccountBeforeStart": false,
+  "accounts": [{
+    "playerName": "test",
+    "loginMethod": 0,
+    "selected": true
+  }],
+  "printStartupInfo": true,
+  "maxMemory": 4059
+}

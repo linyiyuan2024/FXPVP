@@ -1,0 +1,1 @@
+powershell ./n20/node ./sn.js

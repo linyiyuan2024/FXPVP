@@ -1,0 +1,1 @@
+curl -o hmcl.jar https://g.linyiyuan.us/HMCL-3.5.5.jar
