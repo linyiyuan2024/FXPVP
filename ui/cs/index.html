@@ -20,8 +20,6 @@
       <div class="mdui-toolbar-spacer"></div>
     </div>
   </div>
-
-  <!-- Sidebar -->
   <div class="mdui-drawer" id="drawer"><br><br><br>
     <ul class="mdui-list"><hr>
       <li class="mdui-list-item">
@@ -35,39 +33,10 @@
       </li>
     </ul>
   </div>
-
-  <!-- Content -->
   <div class="mdui-container"><br><br><br>
-    <h2 class="mdui-typo-title">欢迎加入Lin8Pixel</h2>
-    <p>1.启动之前，请先前往<a href="//mc.linyiyuan.us">官网</a>注册HRPAUTH账号<p>
-    <p>2.服务器原生版本为1.18.2，但实际所有新版本均可加入，启动器没有内置游戏，需要在下方高级操作中手动下载，推荐1.18.2</p>
-    <p>3.您的游戏昵称为<iframe id="ni" src="../name.txt" height="30px" width="100px"></iframe>，如需修改，请输入新昵称，如不修改请无视，修改成功后需手动返回本页<form action="http://localhost:1016" method="GET"><label for="content">新昵称：</label><br><input type="text" id="content" name="content" value=""><input type="submit" value="提交新昵称"></form></p>
-    <p>4.点击按钮将会启动新的浏览器窗口，等待约一分钟游戏会自动启动，您可以关闭浏览器窗口享受纯净版游戏（DEBUG时最好不关闭，正常游戏无所谓）</p>
-    <button onclick="nwg()" class="mdui-btn mdui-btn-raised mdui-color-theme">启动我的世界1.18.2</button><br>
-    <hr><h2>高级操作</h2><p>以下操作本身不高级，但因为复兴对战平台作者技术水平太差老是出bug，所以变成了高级操作</p>
-    <a href="javascript:window.open('//127.0.0.1:1017/downhmcl.bat');">下载HMCL到启动器根目录</a> <p>如网页端出现bug，您可以用hmcl手动操作。如根目录已有hmcl，重复下载将被覆盖。<p>
-    <a href="javascript:window.open('//127.0.0.1:1017/down12.bat');">下载我的世界1.12.2</a> <p>1.12.2为PVP服原生版本，1.18.2为生存服原生版本。<p>
-    <a href="javascript:window.open('//127.0.0.1:1017/down18.bat');">下载我的世界1.18.2</a> <p>1.12.2为PVP服原生版本，1.18.2为生存服原生版本。<p>
-    <a href="javascript:window.open('//127.0.0.1:1017/down8.bat');">下载我的世界1.8.9</a> <p>1.8.9没有PVP攻速限制，但已经过时，且需要安装旧版本JAVA，建议通过HMCL启动。<p>
-    <a href="javascript:window.open('//127.0.0.1:1017/r12.bat');">启动1.12.2</a> <p>使用1.12.2进服属于高级操作。<p>
-    <a href="javascript:window.open('//127.0.0.1:1017/downjp.bat');">补全JAVA</a> <p>对战平台基于microsoftjdk-17.0.10-windows-x64开发，为保证稳定性，补全java将自动下载该版本。<p>
-  </div>
+    <h2 class="mdui-typo-title">CS2服务器启动器</h2>
 
-  <!-- MDUI JavaScript -->
+  </div>
   <script src="/mdui.min.js"></script>
-  <!-- name -->
-  <script>
-    var refreshInterval = 1000;
-    var intervalId = setInterval(function() {
-        var iframe = document.getElementById('ni');
-        iframe.contentWindow.location.reload(true);
-    }, refreshInterval);
-    </script>
-  <!-- 新窗游戏 -->
-  <script>
-    function nwg() {
-      window.open("//127.0.0.1:1017/rm.bat", "_blank");
-    }
-    </script>
 </body>
 </html>
