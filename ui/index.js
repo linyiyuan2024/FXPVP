@@ -1,54 +1,24 @@
 const http = require('http');
 const { exec } = require('child_process');
-const fs = require('fs');
-const os = require('os');
+const querystring = require('querystring');
 
-// Default whitelist: Localhost and local network IP ranges
-const defaultWhitelist = ['127.0.0.1', '::1'];
-const localIPs = getLocalIPs(); // Get local network IPs
-const whitelist = new Set([...defaultWhitelist, ...localIPs]);
-
-// Load additional IPs from whitelist.txt
-fs.readFile('whitelist.txt', 'utf-8', (err, data) => {
-  if (err) {
-    console.error('Error reading whitelist.txt:', err.message);
-  } else {
-    data.split('\n').forEach(line => {
-      const ip = line.trim();
-      if (ip) {
-        whitelist.add(ip);
-      }
-    });
-  }
-});
-
-// Get local IP addresses
-function getLocalIPs() {
-  const interfaces = os.networkInterfaces();
-  const localIPs = [];
-
-  for (const name of Object.keys(interfaces)) {
-    for (const iface of interfaces[name]) {
-      if (iface.family === 'IPv4' && !iface.internal) {
-        localIPs.push(iface.address);
-      }
-    }
-  }
-  return localIPs;
-}
+// Define a function to decode URL-encoded strings
+const decodeCommand = (command) => {
+  return querystring.unescape(command);
+};
 
 const server = http.createServer((req, res) => {
-  const clientIP = req.socket.remoteAddress;
-
-  if (!whitelist.has(clientIP)) {
-    res.statusCode = 403; // Forbidden
-    res.end('Your IP is not allowed to access this server.');
-    return;
-  }
-
   if (req.method === 'GET') {
-    const decodedURL = decodeURIComponent(req.url); // Decode URL-encoded characters
-    const command = decodedURL.substring(1); // Remove leading '/'
+    const hostname = req.headers.host.split(':')[0]; // Get the hostname from the Host header
+
+    // Allow only requests with hostname 127.0.0.1
+    if (hostname !== '127.0.0.1') {
+      res.statusCode = 403; // Forbidden
+      res.end('Access denied. Only requests with hostname 127.0.0.1 are allowed.');
+      return;
+    }
+
+    let command = decodeCommand(req.url.substring(1)); // Remove leading '/' and decode the command
 
     exec(command, { encoding: 'utf-8' }, (error, stdout, stderr) => {
       if (error) {
@@ -56,8 +26,8 @@ const server = http.createServer((req, res) => {
         res.end(`Error executing command: ${error.message}`);
         return;
       }
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+      res.statusCode = 200; // OK
+      res.setHeader('Content-Type', 'text/plain; charset=utf-8'); // Set UTF-8 charset
       res.write(stdout || stderr);
       res.end("执行成功，请关闭此页面。");
     });
